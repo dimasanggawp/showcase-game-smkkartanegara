@@ -1,0 +1,70 @@
+const C3 = self.C3;
+self.C3_GetObjectRefTable = function () {
+	return [
+		C3.Plugins.Sprite,
+		C3.Behaviors.Tween,
+		C3.Plugins.Audio,
+		C3.Behaviors.EightDir,
+		C3.Behaviors.solid,
+		C3.Plugins.Mouse,
+		C3.Plugins.Touch,
+		C3.Plugins.Text,
+		C3.Plugins.System.Cnds.OnLayoutStart,
+		C3.Behaviors.EightDir.Acts.SetSpeed,
+		C3.Plugins.Sprite.Cnds.OnCollision,
+		C3.Plugins.Text.Acts.SetOpacity,
+		C3.Plugins.System.Acts.SetLayerVisible,
+		C3.Plugins.System.Acts.Wait,
+		C3.Plugins.System.Acts.RestartLayout,
+		C3.Plugins.Sprite.Acts.SetInstanceVar,
+		C3.Plugins.Sprite.Exps.Width,
+		C3.Plugins.Sprite.Exps.Height,
+		C3.Plugins.Touch.Cnds.OnTapGestureObject,
+		C3.Behaviors.Tween.Acts.TweenTwoProperties,
+		C3.Plugins.System.Acts.GoToLayout,
+		C3.Plugins.Audio.Acts.Play,
+		C3.Plugins.Touch.Cnds.OnTouchObject,
+		C3.Plugins.Sprite.Cnds.CompareFrame,
+		C3.Plugins.Sprite.Acts.SetAnimFrame,
+		C3.Plugins.Audio.Acts.SetSilent
+	];
+};
+self.C3_JsPropNameTable = [
+	{BG: 0},
+	{UkuranX: 0},
+	{UkuranY: 0},
+	{Tween: 0},
+	{BtnMulai: 0},
+	{MusicBG: 0},
+	{Jalan: 0},
+	{Pohon: 0},
+	{isParked: 0},
+	{"8Direction": 0},
+	{Mobil: 0},
+	{Solid: 0},
+	{MobilDiam: 0},
+	{Parkir: 0},
+	{Hitam: 0},
+	{Mouse: 0},
+	{Touch: 0},
+	{Teks: 0},
+	{MisiGagal: 0},
+	{LaguOffon: 0}
+];
+
+self.InstanceType = {
+	BG: class extends self.ISpriteInstance {},
+	BtnMulai: class extends self.ISpriteInstance {},
+	MusicBG: class extends self.IInstance {},
+	Jalan: class extends self.ISpriteInstance {},
+	Pohon: class extends self.ISpriteInstance {},
+	Mobil: class extends self.ISpriteInstance {},
+	MobilDiam: class extends self.ISpriteInstance {},
+	Parkir: class extends self.ISpriteInstance {},
+	Hitam: class extends self.ISpriteInstance {},
+	Mouse: class extends self.IInstance {},
+	Touch: class extends self.IInstance {},
+	Teks: class extends self.ITextInstance {},
+	MisiGagal: class extends self.ITextInstance {},
+	LaguOffon: class extends self.ISpriteInstance {}
+}
